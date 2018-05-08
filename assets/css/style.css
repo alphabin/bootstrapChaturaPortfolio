@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
 *{
-    border: 1px solid red !important;
+    /* border: 1px solid red !important; */
     margin: 0;
     box-sizing: border-box;
     margin: 0;
@@ -9,14 +11,111 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+    
 }
+
 .row{
     display: block;
-
 }
 
 #image {
     width: 100%;
-    height: 400px;
-    background: url('../images/backChaturaSite2.jpeg') 50% 50% no-repeat ;
+    height: 860px;
+    background: url('../images/deathStar.jpg') 50% 50% no-repeat ;
+    padding: 0 20%;
+}
+
+#image:active{
+    background: url('../images/vadar.gif') 50% 50% no-repeat ;
+    z-index: 1021;
+  
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: red;
+    z-index: 1;
+    left: 0;
+    margin-top: 40px;
+}
+
+body{
+    background-image: url("../images/galaxy.gif");
+
+}
+
+.centerFooter , .headerName{
+    color: snow;
+}
+
+.marginRed{
+    border: 1px solid red !important;
+}
+
+.imageProfile{
+    width: 40%;
+    height: 40%;
+}
+
+.paraMain{
+    background-color: black;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    color:yellow;
+    opacity: .8;
+    border: 3px inset yellow;
+    padding: 5px 8px;
+
+    
+}
+
+.nav-link 
+{
+    color:yellow;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-image: url("../images/galaxy.gif");
+}
+
+.card-title{
+    background-color: aqua;
+}
+
+.card{
+    color: blue;
+}
+
+@media  screen and (max-width: 894px) and (min-width: 0px){
+  .nav{
+    margin-left: 15%;
+  }
+
+  .paraMain {
+    margin-top: 40%;
+    
+  }
+
+  #image{
+    height: 1060px;
+  }
+}
+
+
+@media  screen and (max-width: 960px) and (min-width: 894px){
+    .nav{
+      margin-left: 25%;
+      margin-right: 25%;
+      float: left;
+    }
   }
