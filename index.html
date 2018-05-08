@@ -1,57 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chatura Home Page</title>
-    <!-- This is linked to the css-->
+    <title>Chatura Bootstrap</title>
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-</head>
-<body>
-     <header>
-         <nav >
-            <ul class="headerHorizontal">             
-                    <div class="frontNav">
-                        <li><a href="index.html">Chatura Ahangama</a> </li>           
-                    </div>
-                    <div class="backNav">
-                        <li ><a href="index.html">About</a> |</li>
-                        <li ><a href="portfolio.html">Portfolio</a> |</li>
-                        <li ><a href="contact.html">Contact</a></li>
-                    </div>
-            </ul>
-            </nav>           
-     </header>
-     <section class="Container">
-        <div class=TitleName>
-            <h1>About Me</h1>
-        </div>
-        <div class="border">
-        </div>
-        <div class=TitileIntro>
-             <img src="./assets/images/profile.png" alt="profileImg"  class="image">
-      
-             <p> Welcome to my project portfolio, this website is built with the idea of showcasing my many talents.
-             </p>
-            
-             <p>Passionate Virtualization and ESXi enthusiast, working on better TensorFlow, Python, C, C#, C++ coding skills and practical bash applications for OSX,Linux,Win.
-             </p>
-           
-             <p>Graduate with an AS in Cybersecurity and currently attaining a BS in Computer Science at California State University of Monterey Bay. Goal-driven team player with an emphasis on software development in respect to SDLC principles.
-              Experienced and trained in consuming (REST,HEX,TCP,UDP,JSON RPC,XML) sync and async API’s to
-              create drivers that control devices and gather real time analytics of enterprise level IOT devices.
-             </p>
-        </div>
-     </section>
+    <body>
 
-    <footer class="footer">
-        <strong>
-           Copyright @ 2018 Chatura Ahangama      
-        </strong>
-    </footer>
-</body>
+        <div class="container-fluid">
+            <div class="row nav-bar">
+                <div class="col-md-4 col-sm-12 headerName text-center">
+                    <h3>Chatura Ahangama</h3>
+                </div>
+                <ul class="offset-md-4 col-md-4 nav text-center">
+                    <li class="nav-item marginRed">
+                        <a class="nav-link " href="./index.html">About</a>
+                    </li>
+                    <li class="nav-item marginRed ">
+                        <a class="nav-link" href="./portfolio.html">Projects</a>
+                    </li>
+                    <li class="nav-item marginRed">
+                        <a class="nav-link" href="./contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid ">
+            <div class="row marginRed">
+                <div class="col-md-12" id="image">
+
+                    <div class="paraMain">
+                        <h3>About Me</h3>
+                        <div class="border">
+                        </div>
+                        <p>
+                            <img src="./assets/images/profile.png" alt="profileImg" class="imageProfile">
+                            <em>"These are not the bootcamp pages you were looking for......(click me)"</em>
+                            <br>
+                            <br> I am a passionate Virtualization and ESXi enthusiast, working on better TensorFlow, Python,
+                            C, C#, C++ coding skills and practical bash applications for OSX,Linux,Win. Graduate with an
+                            AS in Cybersecurity and currently attaining a BS in Computer Science at California State University
+                            of Monterey Bay. Goal-driven team player with an emphasis on software development in respect
+                            to SDLC principles. Experienced and trained in consuming (REST,HEX,TCP,UDP,JSON RPC,XML) sync
+                            and async API’s to create drivers that control devices and gather real time analytics of enterprise
+                            level IOT devices.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer backgroundFooter">
+            <div class="container text-center " style="cursor:progress;">
+
+                <span class="centerFooter text-center">Chatura Ahangama @ 2018</span>
+            </div>
+        </footer>
+
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap JavaScript CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+        <!-- Add javascript for the responsive background -->
+        <script src="./assets/javascript/background.js"></script>
+    </body>
+
 </html>

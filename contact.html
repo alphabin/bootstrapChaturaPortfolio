@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chatura Home Page</title>
-    <!-- This is linked to the css-->
+    <title>Chatura Bootstrap</title>
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-</head>
-<body>
-     <head>
-         <nav >
-            <ul class="headerHorizontal">             
-                    <div class="frontNav">
-                        <li><a href="index.html">Chatura Ahangama</a> </li>           
-                    </div>
-                    <div class="backNav">
-                        <li ><a href="index.html">About</a> |</li>
-                        <li ><a href="portfolio.html">Portfolio</a> |</li>
-                        <li ><a href="contact.html">Contact</a></li>
-                    </div>
-            </ul>
-            </nav>           
-     </head>
-     <section class="Container">
-            
-            <form action="/my-handling-form-page" method="post">
-                <div class=TitleName>
-                        <h1>Contact Me</h1>
-                    </div>
-                    <div class="border">
+    <body>
 
-                    </div>
-                  <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name">
-                  </div>
-                
-                  <div>
-                    <label for="mail">E-mail:</label>
-                    <input type="email" id="mail" name="user_email">
-                  </div>
-                
-                  <div>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                  </div>
-                 
-                  <div class="button">
-                    <button type="submit">Send your message</button>
-                  </div>
-                </form>
-     </section>
+        <div class="container-fluid">
+            <div class="row nav-bar">
+                <div class="col-md-4 col-sm-12 headerName text-center">
+                    <h3>Chatura Ahangama</h3>
+                </div>
+                <ul class="offset-md-4 col-md-4 nav text-center">
+                    <li class="nav-item marginRed">
+                        <a class="nav-link " href="./index.html">About</a>
+                    </li>
+                    <li class="nav-item marginRed ">
+                        <a class="nav-link" href="./portfolio.html">Projects</a>
+                    </li>
+                    <li class="nav-item marginRed">
+                        <a class="nav-link" href="./contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <footer class="footer">
-        <strong>
-           Copyright @ Chatura Ahangama      
-        </strong>
-    </footer>
-</body>
+
+        <div class="container-fluid ">
+            <div class="row marginRed">
+                <div class="col-md-12" id="image">
+
+                    <div class="paraMain">
+                        <h3>Contact Me</h3>
+                        <div class="border">
+                        </div>
+                        <p>
+                            <form class="formContact">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@deathstar.gov">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputName">From Name</label>
+                                    <input type="exampleInputName" class="form-control" id="exampleInputName1" placeholder="Darth Vadar">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="exampleTextarea">Message</label>
+                                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer backgroundFooter">
+            <div class="container text-center " style="cursor:progress;">
+
+                <span class="centerFooter text-center">Chatura Ahangama @ 2018</span>
+            </div>
+        </footer>
+
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap JavaScript CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+        <!-- Add javascript for the responsive background -->
+        <script src="./assets/javascript/background.js"></script>
+    </body>
+
 </html>

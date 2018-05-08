@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chatura Home Page</title>
-    <!-- This is linked to the css-->
+    <title>Chatura Bootstrap</title>
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-</head>
-<body>
-     <head>
-         <nav >
-            <ul class="headerHorizontal">             
-                    <div class="frontNav">
-                        <li><a href="index.html">Chatura Ahangama</a> </li>           
-                    </div>
-                    <div class="backNav">
-                        <li ><a href="index.html">About</a> |</li>
-                        <li ><a href="portfolio.html">Portfolio</a> |</li>
-                        <li ><a href="contact.html">Contact</a></li>
-                    </div>
-            </ul>
-            </nav>           
-     </head>
-     <section class="Container">
-        <div class=TitleName>
-            <h1>Portfolio</h1>
-        </div>
-        <div class="border">
-        </div>
-        <div class="top">
-        <div class="card" >
-                <img src="./assets/images/profile.png" alt="Avatar" style="width:100%">
-                <div class="containerBox">
-                  <h4><b>Week1</b></h4> 
-                  <p>Assignement 1</p> 
-                </div>
-        </div>
-        <div class="card">
-                <img src="./assets/images/profile.png" alt="Avatar" style="width:100%">
-                <div class="containerBox">
-                  <h4><b>Week1</b></h4> 
-                  <p>Assignment 2</p> 
-                </div>
-        </div>
-        </div>
-        <div class="top">
-                <div class="card" >
-                        <img src="./assets/images/profile.png" alt="Avatar" style="width:100%">
-                        <div class="containerBox">
-                          <h4><b>Week2</b></h4> 
-                          <p>Assignement 1</p> 
-                        </div>
-                </div>
-                <div class="card">
-                        <img src="./assets/images/profile.png" alt="Avatar" style="width:100%">
-                        <div class="containerBox">
-                          <h4><b>Week2</b></h4> 
-                          <p>Assignment 2</p> 
-                        </div>
-                </div>
-        </div>    
-        <div class="top">
-                <div class="card" >
-                        <img src="./assets/images/profile.png" alt="Avatar" style="width:100%">
-                        <div class="containerBox">
-                          <h4><b>Week3</b></h4> 
-                          <p>Assignement 1</p> 
-                        </div>
-                </div>
-                <div class="card">
-                        <img src="./assets/images/profile.png" alt="Avatar" style="width:100%">
-                        <div class="containerBox">
-                          <h4><b>Week3</b></h4> 
-                          <p>Assignment 2</p> 
-                        </div>
-                </div>
-        </div>     
-     </section>
+    <body>
 
-    <footer class="footer">
-        <strong>
-           Copyright @ 2018 Chatura Ahangama      
-        </strong>
-    </footer>
-</body>
+        <div class="container-fluid">
+            <div class="row nav-bar">
+                <div class="col-md-4 col-sm-12 headerName text-center">
+                    <h3>Chatura Ahangama</h3>
+                </div>
+                <ul class="offset-md-4 col-md-4 nav text-center">
+                    <li class="nav-item marginRed">
+                        <a class="nav-link " href="./index.html">About</a>
+                    </li>
+                    <li class="nav-item marginRed ">
+                        <a class="nav-link" href="./portfolio.html">Projects</a>
+                    </li>
+                    <li class="nav-item marginRed">
+                        <a class="nav-link" href="./contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid ">
+            <div class="row marginRed">
+                <div class="col-md-12" id="image">
+                    <div class="paraMain">
+                        <h3>Portfolio</h3>
+                        <div class="border">
+                        </div>
+                        <p>
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Week1 Assignements</h5>
+                                    <p class="card-text">Week 1 assignements and GitHub assignement.</p>
+                                    <a href="#" class="btn btn-primary">Go to GitHub</a>
+                                </div>
+                            </div>
+
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Week2 Assignements</h5>
+                                    <p class="card-text">Week 2 assignements and GitHub assignement.</p>
+                                    <a href="#" class="btn btn-primary">Go to GitHub</a>
+                                </div>
+                            </div>
+
+                            <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Week3 Assignements</h5>
+                                        <p class="card-text">Week 3 assignements and GitHub assignement.</p>
+                                        <a href="#" class="btn btn-primary">Go to GitHub</a>
+                                    </div>
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer backgroundFooter">
+            <div class="container text-center " style="cursor:progress;">
+
+                <span class="centerFooter text-center">Chatura Ahangama @ 2018</span>
+            </div>
+        </footer>
+
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Bootstrap JavaScript CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+        <!-- Add javascript for the responsive background -->
+        <script src="./assets/javascript/background.js"></script>
+    </body>
+
 </html>
